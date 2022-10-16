@@ -152,7 +152,7 @@ st.sidebar.write(account.address)
 # Write the returned ether balance to the sidebar
 # YOUR CODE HERE
 
-st.sidebar.write(get_balance(w3, account))
+st.sidebar.write(get_balance(w3, account.address))
 ##########################################
 
 # Create a select box to chose a FinTech Hire candidate
@@ -292,7 +292,7 @@ if st.sidebar.button("Send Transaction"):
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
-get_people()
+# get_people()
 
 ################################################################################
 # Step 3: Inspect the Transaction
